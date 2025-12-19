@@ -10,17 +10,25 @@ public class DashboardPage {
 	WebDriver driver;
 	DashboardPage dashboardpPage;
 
-	@FindBy(xpath="//ul[@class='login-register-nav dropdown d-flex align-items-center']//li[@class='register-link']//a[@href='#'][normalize-space()='Register']")
-	WebElement clickOnRegisterButton;
+	@FindBy(xpath = "//ul[@class='login-register-nav dropdown d-flex align-items-center']//li[@class='register-link']//a[@href='#'][normalize-space()='Register']")
+	WebElement registerOption;
+
+	@FindBy(xpath = "//ul[@class='login-register-nav dropdown d-flex align-items-center']//li[@class='login-link']//a[@href='#'][normalize-space()='Login']")
+	WebElement loginOption;
+
 	public DashboardPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 
 	public RegisterPage navigateToRegisterPage() {
-		clickOnRegisterButton.click();
+		registerOption.click();
 		return new RegisterPage(driver);
 	}
-	//Actions
-	
+	// Actions
+
+	public LoginPage navigateToLoginPage() {
+		loginOption.click();
+		return new LoginPage(driver);
+	}
 }

@@ -2,23 +2,19 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-25T15:32:10 IST" name="Default suite" finished-at="2025-10-25T15:33:34 IST" duration-ms="84278">
+  <suite started-at="2025-12-07T23:37:57 IST" name="Default suite" finished-at="2025-12-07T23:38:30 IST" duration-ms="33169">
     <groups>
     </groups>
-    <test started-at="2025-10-25T15:32:10 IST" name="Default test" finished-at="2025-10-25T15:33:34 IST" duration-ms="84278">
+    <test started-at="2025-12-07T23:37:57 IST" name="Default test" finished-at="2025-12-07T23:38:30 IST" duration-ms="33169">
       <class name="com.axissquare.qa.testcases.RegisterTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.axissquare.qa.testcases.RegisterTest@6d4d66d2]" started-at="2025-10-25T15:32:10 IST" name="setup" finished-at="2025-10-25T15:33:32 IST" duration-ms="82048" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.axissquare.qa.testcases.RegisterTest@7526515b]" started-at="2025-12-07T23:37:57 IST" name="setup" finished-at="2025-12-07T23:38:30 IST" duration-ms="33017" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyRegisteringAnAccountWithMandatoryFields()[pri:1, instance:com.axissquare.qa.testcases.RegisterTest@6d4d66d2]" started-at="2025-10-25T15:33:32 IST" name="verifyRegisteringAnAccountWithMandatoryFields" finished-at="2025-10-25T15:33:32 IST" duration-ms="26" status="PASS">
+        <test-method signature="verifyRegisteringAnAccountWithMandatoryFields()[pri:1, instance:com.axissquare.qa.testcases.RegisterTest@7526515b]" started-at="2025-12-07T23:38:30 IST" name="verifyRegisteringAnAccountWithMandatoryFields" finished-at="2025-12-07T23:38:30 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegisteringAnAccountWithMandatoryFields -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.axissquare.qa.testcases.RegisterTest@6d4d66d2]" started-at="2025-10-25T15:33:32 IST" name="tearDown" finished-at="2025-10-25T15:33:34 IST" duration-ms="2114" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
       </class> <!-- com.axissquare.qa.testcases.RegisterTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
