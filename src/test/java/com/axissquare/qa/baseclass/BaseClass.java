@@ -21,7 +21,17 @@ public class BaseClass {
 		try {
 			FileInputStream fis = new FileInputStream(proFile);
 			prop.load(fis);
-		} catch (Exception e) {
+		} catch (Throwable e) {
+			e.printStackTrace();
+		}
+		
+		dataProp = new Properties();
+		File dataProFile = new File(System.getProperty("user.dir")
+				+ "\\src\\main\\java\\com\\axissquare\\\\qa\\testdata\\testdata.properties");
+		try {
+			FileInputStream datafis = new FileInputStream(dataProFile);
+			dataProp.load(datafis);
+		} catch (Throwable e) {
 			e.printStackTrace();
 		}
 	}

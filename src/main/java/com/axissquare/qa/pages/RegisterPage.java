@@ -13,7 +13,7 @@ public class RegisterPage {
 	// Objects
 	@FindBy(xpath = "//input[@placeholder='First Name']")
 	WebElement enterFirstName;
-	@FindBy(xpath = "//input[@placeholder='Last Name']")
+	@FindBy(xpath = "//input[@name='last_name']")
 	WebElement enterLastName;
 	@FindBy(xpath = "//input[@placeholder='Username']")
 	WebElement enterUserName;
@@ -36,9 +36,9 @@ public class RegisterPage {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-	// Actions
 
-	public void enterFirstName(String firstNameText) {
+	// Actions
+/*	public void enterFirstName(String firstNameText) {
 		enterFirstName.sendKeys(firstNameText);
 	}
 
@@ -68,7 +68,6 @@ public class RegisterPage {
 				account.click();
 			}
 		}
-
 	}
 
 	public RegisterPage selectTermsAndConditions() {
@@ -80,5 +79,19 @@ public class RegisterPage {
 		clickOnRegisterButton.click();
 		return new RegisterPage(driver);
 	}
+*/
+	public RegisterPage registerWithMandatoryFields(String firstNameText, String lastNameText,String userNameText, String emailText,String userPhoneText,
+			String userPasswordText, String userReTypePassword ) {
 
+		enterFirstName.sendKeys(firstNameText);
+		enterLastName.sendKeys(lastNameText);
+		enterUserName.sendKeys(userNameText);
+		enterEmailAddress.sendKeys(emailText);
+		enterPhoneNumber.sendKeys(userPhoneText);
+		enterPassword.sendKeys(userPasswordText);
+		retypePassword.sendKeys(userReTypePassword);
+		clickOnRegisterButton.click();
+
+		return new RegisterPage(driver);
+	}
 }

@@ -33,9 +33,22 @@ public class RegisterTest extends BaseClass {
 
 	@Test(priority = 1)
 	public void verifyRegisteringAnAccountWithMandatoryFields() {
+
 		// registerPage
 		// =registerPage.registerWithMandatoryFields(dataProp.getProperty("firstName"),dataProp.getProperty("lastName"),Utilities.generateEmailWithTimeStamp(),prop.getProperty("validPassword"));
+		registerPage = registerPage.registerWithMandatoryFields(dataProp.getProperty("firstName"),
+				dataProp.getProperty("lastName"), dataProp.getProperty("userName"), dataProp.getProperty("userEmail"),
+				dataProp.getProperty("userPhone"), dataProp.getProperty("userPassword"),
+				dataProp.getProperty("userRetypePasswords"));
 		// Assert.assertEquals(registerPage.retrieveAccountSuccessPageHeading().contains(dataProp.getProperty("accountSuccessfullyCreatedHeading")),"Congratulations!
 		// your account has been successfull");
+		System.out.println(dataProp.getProperty("lastName"));
 	}
+
+	public void verifyRegisteringAccountWithExistingEmailAddress() {
+	}
+
+	public void verifyRegisteringAccountWithoutFillingAnyDetails() {
+	}
+
 }
