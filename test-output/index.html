@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\umesh\AppData\Local\Temp\testng-eclipse--331464275\testng-customsuite.xml</span>
+                    <span>C:\Users\umesh\AppData\Local\Temp\testng-eclipse--47728301\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -129,14 +129,34 @@
                   <a name="verifyRegisteringAnAccountWithMandatoryFields">
                   </a> <!-- verifyRegisteringAnAccountWithMandatoryFields -->
                   <span class="method-name">verifyRegisteringAnAccountWithMandatoryFields</span>
-                  <div class="stack-trace">java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=143.0.7499.170)
+Build info: version: &apos;4.36.0&apos;, revision: &apos;6d115cfd87&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [88dfbf845c5bf86caa577a13a02d7b0b, findElement {using=xpath, value=//input[@placeholder=&apos;First Name&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\umesh\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59329}, goog:processID: 7504, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59329/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 88dfbf845c5bf86caa577a13a02d7b0b
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at jdk.proxy2/jdk.proxy2.$Proxy11.sendKeys(Unknown Source)
-	at com.axissquare.qa.pages.RegisterPage.registerWithMandatoryFields(RegisterPage.java:92)
-	at com.axissquare.qa.testcases.RegisterTest.verifyRegisteringAnAccountWithMandatoryFields(RegisterTest.java:39)
+	at com.axissquare.qa.pages.RegisterPage.registerWithMandatoryFields(RegisterPage.java:86)
+	at com.axissquare.qa.testcases.RegisterTest.verifyRegisteringAnAccountWithMandatoryFields(RegisterTest.java:37)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -172,7 +192,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\umesh\AppData\Local\Temp\testng-eclipse--331464275\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\umesh\AppData\Local\Temp\testng-eclipse--47728301\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -225,12 +245,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyRegisteringAnAccountWithMandatoryFields')
 data.setCell(0, 2, 'com.axissquare.qa.testcases.RegisterTest')
-data.setCell(0, 3, 9921);
+data.setCell(0, 3, 113);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <span class="suite-total-time">Total running time: 113 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -265,7 +285,7 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verifyRegisteringAnAccountWithMandatoryFields</span>
-                <span class="method-start">41192 ms</span>
+                <span class="method-start">210281 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
