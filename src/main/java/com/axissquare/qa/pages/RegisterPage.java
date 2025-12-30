@@ -32,7 +32,7 @@ public class RegisterPage {
 	WebElement selectAccountTypeDropdown;
 	@FindBy(xpath = "//ul[@class='dropdown-menu inner show']//li")
 	List<WebElement> selectAccountList;
-	@FindBy(xpath = "//label[@class='control control--checkbox']")
+	@FindBy(xpath = "//label[@class='control control--checkbox']//span[@class='control__indicator']")
 	WebElement checkTermsAndConditions;
 	@FindBy(xpath = "//button[@id='houzez-register-btn']")
 	WebElement clickOnRegisterButton;
@@ -45,7 +45,9 @@ public class RegisterPage {
 	WebElement userNameWarning;
 	@FindBy(xpath = "//div[contains(text(),'The email field is empty.')]")
 	WebElement emailWarning;
-	@FindBy(xpath = "//div[contains(text(), 'Please enter your number')]")
+	@FindBy(xpath="jhjkhjhjk")
+	WebElement duplicateEmailAddressWarning;
+	@FindBy(xpath = "//div[contains(text(;), 'Please enter your number')]")
 	WebElement phoneNumberWarning;
 	@FindBy(xpath = "//div[contains(text(), 'One of the password field is empty!')]")
 	WebElement passwordWarning;
@@ -91,6 +93,7 @@ public class RegisterPage {
 	 */
 
 	// Generic reusable method (ONLY ONCE)
+	
 	public String getWarningText(WebElement element) {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
@@ -121,6 +124,11 @@ public class RegisterPage {
 	public String retrieveEmailWarning() {
 		return getWarningText(emailWarning);
 	}
+	public String retrieveDuplicateEmailAddressWarning()
+	{
+		return getWarningText(duplicateEmailAddressWarning);
+	}
+
 
 	// Phone number warning
 	public String retrievePhoneNumberWarning() {
@@ -149,6 +157,11 @@ public class RegisterPage {
 				break;
 			}
 		}
+	}
+	
+	public void selectTearmsAndConditionsOption()
+	{
+		checkTermsAndConditions.click();
 	}
 
 	public RegisterPage registerWithMandatoryFields(String firstNameText, String lastNameText, String userNameText,
